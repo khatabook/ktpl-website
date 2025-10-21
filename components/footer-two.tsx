@@ -1,4 +1,4 @@
-import { Logo } from '@/components/logo'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const links = [
@@ -97,7 +97,13 @@ export default function FooterSection() {
                             href="/"
                             aria-label="go home"
                             className="block size-fit">
-                            <Logo />
+                            <Image
+                                src="/khatapg-logo.png"
+                                alt="Khatabook Payments"
+                                width={120}
+                                height={40}
+                                className="h-8 w-auto"
+                            />
                         </Link>
                         <p className="text-gray-600 dark:text-gray-400 mt-4 text-sm leading-relaxed">
                             Fast settlements, RBI-grade security, developer-friendly APIs.

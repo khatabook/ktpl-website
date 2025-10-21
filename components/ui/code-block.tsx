@@ -34,7 +34,7 @@ export type CodeBlockCodeProps = {
 function CodeBlockCode({
   code,
   language = "tsx",
-  theme = "github-light",
+  theme = "github-dark",
   className,
   ...props
 }: CodeBlockCodeProps) {
@@ -47,14 +47,23 @@ function CodeBlockCode({
         return
       }
 
-      const html = await codeToHtml(code, { lang: language, theme })
-      setHighlightedHtml(html)
+      try {
+        const html = await codeToHtml(code, {
+          lang: language,
+          theme,
+          transformers: []
+        })
+        setHighlightedHtml(html)
+      } catch (error) {
+        console.error("Error highlighting code:", error)
+        setHighlightedHtml(`<pre><code>${code}</code></pre>`)
+      }
     }
     highlight()
   }, [code, language, theme])
 
   const classNames = cn(
-    "w-full overflow-x-auto text-[13px] [&>pre]:px-4 [&>pre]:py-4",
+    "w-full overflow-x-auto text-[13px] [&>pre]:px-4 [&>pre]:py-4 [&>pre]:bg-[#0d1117] [&>pre]:text-gray-300",
     className
   )
 
@@ -67,7 +76,7 @@ function CodeBlockCode({
     />
   ) : (
     <div className={classNames} {...props}>
-      <pre>
+      <pre className="bg-[#0d1117] text-gray-300 whitespace-pre-wrap">
         <code>{code}</code>
       </pre>
     </div>
