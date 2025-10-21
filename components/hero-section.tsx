@@ -83,13 +83,9 @@ export default function HeroSection() {
 
                         <div className="mx-auto max-w-7xl px-6">
                             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                                <TextEffect
-                                    preset="fade-in-blur"
-                                    speedSegment={0.3}
-                                    as="h1"
-                                    className="mx-auto mt-8 max-w-4xl text-balance text-5xl font-[family-name:var(--font-playfair-display)] font-normal md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                                    Payment Gateway with 0% fees
-                                </TextEffect>
+                                <h1 className="mx-auto mt-8 max-w-4xl text-balance text-5xl font-[family-name:var(--font-playfair-display)] font-normal md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+                                    Payment Gateway with <span className="text-[#DC3444]">0% fees</span>
+                                </h1>
                                 <TextEffect
                                     per="line"
                                     preset="fade-in-blur"
