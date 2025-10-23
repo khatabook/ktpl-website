@@ -24,7 +24,28 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 This project includes a lightweight Docker setup for production deployment:
 
-### Quick Start with Docker
+### Production Deployment on Ubuntu
+
+For production deployment on your Ubuntu server:
+
+```bash
+# Navigate to the project directory
+cd /home/ubuntu/ktpl-website
+
+# Pull the latest code
+git pull origin main
+
+# Navigate to docker directory
+cd docker
+
+# Stop any running containers
+docker-compose down
+
+# Build and run in background
+docker-compose up --build -d
+```
+
+### Quick Start with Docker (Development)
 
 ```bash
 # Build and run with Docker Compose
@@ -50,6 +71,25 @@ docker run -p 3000:3000 ktpl-website
 - **Standalone output**: Optimized Next.js build for minimal size
 - **Security**: Runs as non-root user
 - **Health checks**: Built-in monitoring
+
+### Docker Management Commands
+
+```bash
+# Check container status
+docker-compose ps
+
+# View logs
+docker-compose logs -f
+
+# Stop containers
+docker-compose down
+
+# Restart containers
+docker-compose restart
+
+# View resource usage
+docker stats
+```
 
 For detailed Docker documentation, see [docker/README.md](docker/README.md).
 
