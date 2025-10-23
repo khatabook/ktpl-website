@@ -123,7 +123,7 @@ function Header1() {
                             <NavigationMenuList className="flex justify-center gap-4 flex-row">
                                 {navigationItems.map((item) => (
                                     <NavigationMenuItem key={item.title}>
-                                        {item.href ? (
+                                        {item.items ? (
                                             <>
                                                 <NavigationMenuLink>
                                                     <Button variant="ghost">{item.title}</Button>
@@ -178,17 +178,7 @@ function Header1() {
                             {navigationItems.map((item) => (
                                 <div key={item.title}>
                                     <div className="flex flex-col gap-2">
-                                        {item.href ? (
-                                            <Link
-                                                href={item.href}
-                                                className="flex justify-between items-center"
-                                            >
-                                                <span className="text-lg">{item.title}</span>
-                                                <MoveRight className="w-4 h-4 stroke-1 text-muted-foreground" />
-                                            </Link>
-                                        ) : (
-                                            <p className="text-lg">{item.title}</p>
-                                        )}
+                                        <p className="text-lg">{item.title}</p>
                                         {item.items &&
                                             item.items.map((subItem) => (
                                                 <Link
