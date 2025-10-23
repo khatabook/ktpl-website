@@ -155,54 +155,54 @@ export default function HeroSection() {
                     <div className="mx-auto max-w-7xl px-6">
                         {/* First Row */}
                         <div className="flex flex-wrap items-center justify-center gap-x-3 lg:gap-x-6 gap-y-6 text-center">
-                            <Link href="/multi-collect" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 Multi-Collect
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/upi-payment-gateway" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 UPI Gateway
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/recurring-payments" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 Recurring Payments
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/instant-payouts" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 Instant Payouts
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/escrow-accounts" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 Escrow
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/ledgers" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 Ledgers
                             </Link>
                         </div>
 
                         {/* Second Row */}
                         <div className="flex flex-wrap items-center justify-center gap-x-3 lg:gap-x-6 gap-y-6 mt-6 text-center">
-                            <Link href="/settlr" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 Settlr
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/scanner" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 Scanner
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/uistreams" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 UIStreams
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/kyc-onboarding" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 KYC & Onboarding
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/bytes" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 Bytes
                             </Link>
                             <span className="text-gray-300 dark:text-gray-700">/</span>
-                            <Link href="/payment-solutions" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
+                            <Link href="#" className="text-lg lg:text-xl xl:text-2xl font-[family-name:var(--font-playfair-display)] hover:text-red-600 transition-colors whitespace-nowrap">
                                 Payment Solutions
                             </Link>
                         </div>
