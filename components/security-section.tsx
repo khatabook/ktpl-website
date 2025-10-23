@@ -7,7 +7,7 @@ export function SecuritySection() {
             <div className="mx-auto max-w-7xl px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-medium text-gray-900 dark:text-white mb-6 font-[family-name:var(--font-playfair-display)]">
-                        Security you don't have to think about
+                        Security you don&apos;t have to think about
                     </h2>
                 </div>
                 

@@ -57,7 +57,7 @@ export function GlowingFeatures() {
             Why Join Now
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Get exclusive early access benefits and transform your business with India's most trusted payment gateway.
+            Get exclusive early access benefits and transform your business with India&apos;s most trusted payment gateway.
           </p>
         </div>
         

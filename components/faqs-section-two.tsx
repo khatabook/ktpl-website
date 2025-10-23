@@ -45,7 +45,7 @@ export default function FAQs() {
                         <h2 className="text-gray-900 dark:text-white text-4xl font-semibold">FAQ</h2>
                         <p className="text-gray-600 dark:text-gray-400 mt-4 text-balance text-lg">Common questions about early access</p>
                         <p className="text-gray-600 dark:text-gray-400 mt-6 text-base">
-                            Can't find what you're looking for? Mail us at{' '}
+                            Can&apos;t find what you&apos;re looking for? Mail us at{' '}
                             <a
                                 href="mailto:contact@khatapayments.com"
                                 className="text-[#DC3444] font-medium hover:underline">

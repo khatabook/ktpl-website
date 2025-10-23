@@ -18,7 +18,7 @@ export default function PerformanceSection() {
             {/* Testimonial */}
             <div className="border-l-4 border-[#DC3444] pl-6 py-2">
               <p className="text-lg text-gray-300 italic mb-4">
-                "Finally, a payment gateway that doesn't eat into our margins. Setup took 10 minutes, been smooth ever since."
+                &ldquo;Finally, a payment gateway that doesn&apos;t eat into our margins. Setup took 10 minutes, been smooth ever since.&rdquo;
               </p>
               <div>
                 <p className="font-semibold text-white">Rajesh Mehta</p>
