@@ -16,6 +16,9 @@ export function MovingBorderButton({
   className,
   size = "lg"
 }: MovingBorderButtonProps) {
+  // Map md size to default since Button doesn't support md
+  const buttonSize = size === "md" ? "default" : size;
+  
   return (
     <div className="relative group">
       {/* Moving border effect */}
@@ -24,7 +27,7 @@ export function MovingBorderButton({
       {/* Button content */}
       <Button
         asChild
-        size={size}
+        size={buttonSize}
         className={cn(
           "relative bg-[#DC3444] hover:bg-[#B82A37] border-[#DC3444] text-white font-semibold transition-all duration-300 group-hover:scale-105",
           className
