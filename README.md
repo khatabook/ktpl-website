@@ -20,6 +20,39 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Docker Deployment
+
+This project includes a lightweight Docker setup for production deployment:
+
+### Quick Start with Docker
+
+```bash
+# Build and run with Docker Compose
+cd docker
+docker-compose up --build
+```
+
+### Manual Docker Build
+
+```bash
+# Build the production image
+docker build -f docker/Dockerfile -t ktpl-website .
+
+# Run the container
+docker run -p 3000:3000 ktpl-website
+```
+
+### Docker Features
+
+- **Lightweight image**: ~150-200MB (optimized with Alpine Linux)
+- **Multi-stage build**: Separates build and runtime environments
+- **Node.js 24**: Latest Node.js version with Alpine Linux
+- **Standalone output**: Optimized Next.js build for minimal size
+- **Security**: Runs as non-root user
+- **Health checks**: Built-in monitoring
+
+For detailed Docker documentation, see [docker/README.md](docker/README.md).
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
