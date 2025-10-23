@@ -32,8 +32,16 @@ export function AnimatedSection() {
 
           <AnimatedGroup
             className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center"
-            delay={1}
-            stagger={0.1}
+            variants={{
+              container: {
+                visible: {
+                  transition: {
+                    delayChildren: 1,
+                    staggerChildren: 0.1,
+                  },
+                },
+              },
+            }}
           >
             <Button
               asChild
