@@ -148,7 +148,7 @@ function Header1() {
                                                             </Button>
                                                         </div>
                                                         <div className="flex flex-col text-sm h-full justify-end">
-                                                            {item.items?.map((subItem) => (
+                                                            {item.items && item.items.map((subItem) => (
                                                                 <NavigationMenuLink
                                                                     href={subItem.href}
                                                                     key={subItem.title}
